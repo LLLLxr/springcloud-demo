@@ -2,7 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.llllxr</groupId>
+  <parent>
+    <groupId>com.llllxr</groupId>
+    <artifactId>springcloud-demo</artifactId>
+    <version>1.0.0</version>
+  </parent>
   <artifactId>order-server</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -17,17 +21,14 @@
   </properties>
 
   <!--引入springboot-parent父项目-->
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.3.2</version>
-  </parent>
+
 
   <dependencies>
     <!--引入springcloud的euekea server依赖-->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+      <version>4.1.3</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -62,6 +63,7 @@
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-openfeign</artifactId>
+      <version>4.1.3</version>
     </dependency>
     <!--负载均衡器-->
     <dependency>
@@ -91,6 +93,11 @@
       <type>pom</type>
     </dependency>
 
+    <dependency>
+      <groupId>com.llllxr</groupId>
+      <artifactId>common-api</artifactId>
+      <version>1.0.0</version>
+    </dependency>
   </dependencies>
 
 

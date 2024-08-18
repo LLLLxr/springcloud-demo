@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(value = "user-server", configuration = OpenfeignConfig.class)
 public interface UserClient {
-
     @GetMapping("/user/{id}")
     User findUserById(@PathVariable("id") int id);
 }
