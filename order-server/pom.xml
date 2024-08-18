@@ -51,17 +51,45 @@
       <artifactId>mybatis-spring-boot-starter</artifactId>
       <version>3.0.3</version>
     </dependency>
-      <dependency>
-          <groupId>org.projectlombok</groupId>
-          <artifactId>lombok</artifactId>
-          <scope>provided</scope>
-      </dependency>
+    <!--lombok-->
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <scope>provided</scope>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <scope>provided</scope>
     </dependency>
 
+    <!--openFeign-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+    </dependency>
+    <!--负载均衡器-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+    </dependency>
+    <!--OK http 的依赖 -->
+    <dependency>
+      <groupId>io.github.openfeign</groupId>
+      <artifactId>feign-okhttp</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/jakarta.ws.rs/all -->
+    <dependency>
+      <groupId>jakarta.ws.rs</groupId>
+      <artifactId>all</artifactId>
+      <version>4.0.0</version>
+      <type>pom</type>
+    </dependency>
 
   </dependencies>
 

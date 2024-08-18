@@ -14,6 +14,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+//    curl http://localhost:8082/order/1
     @GetMapping("/{id}")
     public Order findUserById(@PathVariable("id") int id){
         Order order = orderService.findOrderById(id);

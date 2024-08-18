@@ -25,4 +25,5 @@ mybatis:
 
 logging:
   level:
-    ROOT: DEBUG
+#    ROOT: DEBUG
+    com.llllxr.client.UserClient: debug

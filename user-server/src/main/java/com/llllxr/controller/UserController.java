@@ -16,6 +16,7 @@ public class UserController {
 
     @GetMapping("/{id}")
     public User findUserById(@PathVariable("id") int id){
+//        int x = 3/0;
         User user = userService.findUserById(id);
         return user;
     }
